@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador Dev - IntegraSI</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; }
+        #resultado { 
+            margin: 20px auto; padding: 20px; border: 1px solid #ccc; 
+            border-radius: 10px; width: 300px; display: none; 
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+        }
+        img { border-radius: 50%; }
+    </style>
+</head>
+<body>
+
+    <h1>Buscador do GitHub 🚀</h1>
+    
+    <input type="text" id="inputNome" placeholder="Digite o usuário...">
+    <button onclick="acionarBusca()">Buscar</button>
+
+    <div id="resultado">
+        <img id="fotoPerfil" src="" alt="Avatar" width="120">
+        <h2 id="nomeTela"></h2>
+        <p id="bioTela"></p>
+        <hr>
+        <p><strong>Repositórios:</strong> <span id="reposTela"></span></p>
+        <p><strong>Seguidores:</strong> <span id="seguidoresTela"></span></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
